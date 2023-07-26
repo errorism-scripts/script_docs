@@ -1,59 +1,55 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Errorism Scripts",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#12A7D3",
-    "light": "#81D7F7",
-    "dark": "#004E7A"
+    "primary": "#6E56CF",
+    "light": "#6E56CF",
+    "dark": "#6E56CF"
   },
   "topbarLinks": [
-    {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
-    }
+
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Get Yours",
+    "url": "https://script.errorism.cc"
   },
   "tabs": [
+  ],
+  "anchors": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+        "name": "Documentation",
+        "icon": "book-open",
+        "url": "https://docs.errorism.cc"
+    },
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "content"
+    },
+    {
+        "name": "Store",
+        "icon": "store",
+        "url": "https://script.errorism.cc"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["introduction"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "Scripts",
+      "pages": ["scripts/errorism.dcl","scripts/errorism.gift"]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "facebook": "https://twitter.com/hex.bsry",
+    "github": "https://github.com/Errorismx"
   },
   "backgroundImage": "/background.png"
 }
