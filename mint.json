@@ -29,7 +29,7 @@
     {
       "name": "Community",
       "icon": "discord",
-      "url": "content"
+      "url": "https://discord.errorism.cc"
     },
     {
         "name": "Store",
@@ -51,5 +51,5 @@
     "facebook": "https://twitter.com/hex.bsry",
     "github": "https://github.com/Errorismx"
   },
-  "backgroundImage": "/background.png"
+  "backgroundImage": "images/backgroundLight.png"
 }
