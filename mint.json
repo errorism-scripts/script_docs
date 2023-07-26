@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Errorism Scripts",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/Dark.png",
+    "light": "/logo/Light.png"
   },
   "favicon": "/favicon.png",
   "colors": {
