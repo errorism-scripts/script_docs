@@ -11,20 +11,17 @@
     "light": "#6E56CF",
     "dark": "#6E56CF"
   },
-  "topbarLinks": [
-
-  ],
+  "topbarLinks": [],
   "topbarCtaButton": {
     "name": "Get Yours",
     "url": "https://script.errorism.cc"
   },
-  "tabs": [
-  ],
+  "tabs": [],
   "anchors": [
     {
-        "name": "Documentation",
-        "icon": "book-open",
-        "url": "https://docs.errorism.cc"
+      "name": "Documentation",
+      "icon": "book-open",
+      "url": "https://docs.errorism.cc"
     },
     {
       "name": "Community",
@@ -32,19 +29,28 @@
       "url": "https://discord.errorism.cc"
     },
     {
-        "name": "Store",
-        "icon": "store",
-        "url": "https://script.errorism.cc"
+      "name": "Store",
+      "icon": "store",
+      "url": "https://script.errorism.cc"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction"]
+      "pages": [
+        "introduction"
+      ]
     },
     {
       "group": "Scripts",
-      "pages": ["scripts/errorism.dcl","scripts/errorism.gift"]
+      "pages": [
+        {
+          "group": "errorism.dcl",
+          "pages": [
+            "scripts/errorism.dcl/install"
+          ]
+        }
+      ]
     }
   ],
   "footerSocials": {
