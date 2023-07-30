@@ -47,7 +47,8 @@
         {
           "group": "errorism.dcl",
           "pages": [
-            "scripts/errorism.dcl/install"
+            "scripts/errorism.dcl/install",
+            "scripts/errorism.dcl/usage"
           ]
         }
       ]
