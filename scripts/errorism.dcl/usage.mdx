@@ -68,6 +68,7 @@ exports['errorism.dcl']:send(webhook,source,message,preset,priority)
 | `message`  | `string or string[]` | **Required**. Player Server Id                                    |
 | `preset`   | `string`             | Preset of this log (In Config file)                               |
 | `priority` | `string`             | Priority of this log (In Config file)                             |
+| `imgUrl`   | `string`             | Image Url (it will override by the preset that has screenshot on) |
 
 ## Meesage Prefix Tips (for message parameter)
 
@@ -86,7 +87,8 @@ exports['errorism.dcl']:send(
     source, -- ถ้าฝั่ง client สามารถใช้ GetPlayerServerId(PlayerId()) เพื่อดึงไอดี
     "+ Add 9 bread into inventory", -- msg 1
     "สาธารณะ", -- preset / ประเภท
-    "เพิ่ม" -- priority / ความสำคัญ
+    "เพิ่ม", -- priority / ความสำคัญ
+    "https://images.squarespace-cdn.com/content/v1/5b788d28697a98e17a6d4c7a/b83f0eab-7dd6-4e9b-83a1-13139ac2a03b/rickroll+cropped.png" -- img url
 )
 
 exports['errorism.dcl']:send(
