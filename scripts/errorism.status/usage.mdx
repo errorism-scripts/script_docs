@@ -1,0 +1,37 @@
+---
+title: "Usage"
+description: "รายการของการฟังก์ชัน และตัวอย่างการใช้งาน"
+icon: "code"
+---
+
+<Warning>
+  ควรจะมีความรู้ขั้นพื้นฐานการเขียนสคริปต์ Lua และการใช้งานฟังก์ชันต่างๆ ก่อน
+  เหมาะกับผู้พัฒนาเท่านั้น
+</Warning>
+
+# errorism.status
+
+ใช้งานได้เหมือน esx_status BUT BETTER
+
+## Usage/Examples
+
+server.lua
+
+```lua
+
+local name    = 'hunger'
+local default = 1000000
+local color   = '#CFAD0F'
+
+TriggerEvent('esx_status:registerStatus', name, default, color,
+	function(status) -- Visible calllback, if it return true the status will be visible
+		return true
+	end,
+	function(status) -- Tick callback, what to do at each tick
+		status.remove(200)
+	end,
+	{remove = 200} -- Client action (add / remove) so the client can be in sync with server
+)
+
+
+```

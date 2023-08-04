@@ -50,6 +50,13 @@
             "scripts/errorism.dcl/install",
             "scripts/errorism.dcl/usage"
           ]
+        },
+        {
+          "group": "errorism.status",
+          "pages": [
+            "scripts/errorism.status/install",
+            "scripts/errorism.status/usage"
+          ]
         }
       ]
     }
