@@ -13,26 +13,25 @@ icon: "code"
 
 ใช้งานได้เหมือน esx_status BUT BETTER
 
+
+## Exports [ใช้ได้ทั้งฝั่ง client เท่านั้น]
+
+#### ดึงข้อมูลผู้เล่น (ไม่จำเป็นต้องใช้ก่อนส่ง log)
+
+```lua
+exports['errorism.dcl']:ToggleStatus(enable)
+```
+
+| Parameter | Type    | Description                                                                     |
+| :-------- | :------ | :------------------------------------------------------------------------------ |
+| `enable`  | `boolean`   | **Required**. เปิดการทำงานของ status (true = เปิด, false = ปิด) |
+
+
 ## Usage/Examples
 
 server.lua
 
 ```lua
-local name    = 'hunger'
-local default = 1000000
-local color   = '#CFAD0F'
-
-TriggerEvent('esx_status:registerStatus', name, default, color,
-	function(status) -- Visible calllback, if it return true the status will be visible
-		return true
-	end,
-	function(status) -- Tick callback, what to do at each tick
-		status.remove(200)
-	end,
-	{remove = 200} -- Client action (add / remove) so the client can be in sync with server
-)
-
-
 
 local name    = 'hunger'
 local default = 1000000
@@ -48,10 +47,10 @@ TriggerEvent('esx_status:registerStatus', name, default, color,
 )
 
 
-exports['errorism.status']:ToggleStatus(boolean) -- เปิดปิด status ทั้งหมด
+exports['errorism.status']:ToggleStatus(true) -- เปิด status ทั้งหมด
+exports['errorism.status']:ToggleStatus(false) -- ปิด status ทั้งหมด
 
 TriggerEvent('errorism.status:ToggleStatus', boolean) -- เปิดปิด status ทั้งหมด
 TriggerClientEvent('errorism.status:ToggleStatus', source,boolean) -- เปิดปิด status ทั้งหมด
-
 
 ```
